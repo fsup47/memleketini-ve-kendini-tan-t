@@ -14,7 +14,7 @@
 
 <!--js(javascript, bootstrap, kendi still dosyam bağlantıları--> 
 </head>
-<body>
+<body id="form_iletisim">
 
     <!--navbar oluşturdum ve içinde 5 link oluşturdum. 
   En başta sayfa logosu oluşturdum. 
@@ -31,11 +31,11 @@
 			<div  class="collapse navbar-collapse" id="menu1">
 				<ul  class="navbar-nav">
 					<li  class="nav-item">
-						<a href="mardin_anasayfa" class="nav-link" href="#" id="yazi_navbar" >Ana sayfa</a>
+						<a href="mardin_anasayfa.html" class="nav-link" href="#" id="yazi_navbar" >Ana sayfa</a>
 					</li>
 					
 					<li class="nav-item">
-						<a href="firat_hakkinda" class="nav-link" href="#" id="yazi_navbar">Hakkında</a>
+						<a href="firat_hakkinda.html" class="nav-link" href="#" id="yazi_navbar">Hakkında</a>
 					</li>
 					
 					<li class="nav-item">
@@ -58,38 +58,141 @@
   
 
 	</nav>
-
-<form action="" method="post" id ="form_iletisim" align="center" >
- İsim: <br/>
- <input type="text" name="isim" /><br/>
- Soyisim: <br/>
- <input type="text" name="soyisim" /><br/>
- E-mail: <br/>
- <input type="text" name="mail" /><br/>
- Cinsiyet: <br/>
- <input type="radio" name="cinsiyet" value="e" /> Erkek<br/>
- <input type="radio" name="cinsiyet" value="k" /> Kadın<br/>
- <input type="radio" name="cinsiyet" value="k" /> Belirtmek İstemiyorum<br/>
- Öneri: <br/>
- <textarea name="mesaj"></textarea><br/>
- hobi: <br/>
- <input type="checkbox" id="hobi1" name="hobi1" value="">
-  <label for="hobi1"> Futbol</label><br>
-  <input type="checkbox" id="hobi2" name="hobi2" value="">
-  <label for="hobi2"> Basketbol</label><br>
-  <input type="checkbox" id="hobi3" name="hobi3" value="">
-  <label for="hobi3"> Diğer</label><br><br>
+	
+	<!-- iletişim deki kullanıcıyla etkileşime geçilen yer-->
+	<div  class="container">
+		<div  class="p-5">
+			<div  class="p-5">
+				<form action="" method="post"  align="center">
+						İsim: <br/>
+					<input type="text" name="isim" /><br/>
+						Soyisim: <br/>
+					<input type="text" name="soyisim" /><br/>
+						E-mail: <br/>
+					<input type="text" name="mail" /><br/>
+						Cinsiyet: <br/>
+					<input type="radio" name="cinsiyet" value="e" /> Erkek<br/>
+					<input type="radio" name="cinsiyet" value="k" /> Kadın<br/>
+					<input type="radio" name="cinsiyet" value="k" /> Belirtmek İstemiyorum<br/>
+						Öneri: <br/>
+					<textarea name="mesaj"></textarea><br/>
+						hobi: <br/>
+					<input type="checkbox" id="hobi1" name="hobi1" value="">
+					<label for="hobi1"> Futbol</label><br>
+					<input type="checkbox" id="hobi2" name="hobi2" value="">
+					<label for="hobi2"> Basketbol</label><br>
+					<input type="checkbox" id="hobi3" name="hobi3" value="">
+					<label for="hobi3"> Diğer</label><br><br>
+	
+					Memleketin: <select name="memleket">
+			
+					<option value="memleket_1">Adana</option>
+					<option value="memleket_2">Adıyaman</option>
+					<option value="memleket_3">Afyonkarahisar</option>
+					<option value="memleket_4">Ağrı</option>
+					<option value="memleket_5">Amasya</option>
+					<option value="memleket_6">Ankara</option>
+					<option value="memleket_7">Antalya</option>
+					<option value="memleket_8">Artvin</option>
+					<option value="memleket_9">Aydın</option>
+					<option value="memleket_10">Balıkesir</option>
+					<option value="memleket_11">Bilecik</option>
+					<option value="memleket_12">Bingöl</option>
+					<option value="memleket_13">Bitlis</option>
+					<option value="memleket_14">Bolu</option>
+					<option value="memleket_15">Burdur</option>
+					<option value="memleket_16">Bursa</option>
+					<option value="memleket_17">Çanakkale</option>
+					<option value="memleket_18">Çankırı</option>
+					<option value="memleket_19">Çorum</option>
+					<option value="memleket_20">Denizli</option>
+					<option value="memleket_21">Diyarbakır</option>
+					<option value="memleket_22">Edirne</option>
+					<option value="memleket_23">Elazığ</option>
+					<option value="memleket_24">Erzincan</option>
+					<option value="memleket_25">Erzurum</option>
+					<option value="memleket_26">Eskişehir</option>
+					<option value="memleket_27">Gaziantep</option>
+					<option value="memleket_28">Giresun</option>
+					<option value="memleket_29">Gümüşhane</option>
+					<option value="memleket_30">Hakkâri</option>
+					<option value="memleket_31">Hatay</option>
+					<option value="memleket_32">Isparta</option>
+					<option value="memleket_33">Mersin</option>
+					<option value="memleket_34">İstanbul</option>
+					<option value="memleket_35">İzmir</option>
+					<option value="memleket_36">Kars</option>
+					<option value="memleket_37">Kastamonu</option>
+					<option value="memleket_38">Kayseri</option>
+					<option value="memleket_39">Kırklareli</option>
+					<option value="memleket_40">Kırşehir</option>
+					<option value="memleket_41">Kocaeli</option>
+					<option value="memleket_42">Konya</option>
+					<option value="memleket_43">Kütahya</option>
+					<option value="memleket_44">Malatya</option>
+					<option value="memleket_45">Manisa</option>
+					<option value="memleket_46">Kahramanmaraş</option>
+					<option value="memleket_47">Mardin</option>
+					<option value="memleket_48">Muğla</option>
+					<option value="memleket_49">Muş</option>
+					<option value="memleket_50">Nevşehir</option>
+					<option value="memleket_51">Niğde</option>
+					<option value="memleket_52">Ordu</option>
+					<option value="memleket_53">Rize</option>
+					<option value="memleket_54">Sakarya</option>
+					<option value="memleket_55">Samsun</option>
+					<option value="memleket_56">Siirt</option>
+					<option value="memleket_57">Sinop</option>
+					<option value="memleket_58">Sivas</option>
+					<option value="memleket_59">Tekirdağ</option>
+					<option value="memleket_60">Tokat</option>
+					<option value="memleket_61">Trabzon</option>
+					<option value="memleket_62">Tunceli</option>
+					<option value="memleket_63">Şanlıurfa</option>
+					<option value="memleket_65">Van</option>
+					<option value="memleket_66">Yozgat</option>
+					<option value="memleket_67">Zonguldak</option>
+					<option value="memleket_68">Aksaray</option>
+					<option value="memleket_69">Bayburt</option>
+					<option value="memleket_70">Karaman</option>
+					<option value="memleket_71">Kırıkkale</option>
+					<option value="memleket_72">Batman</option>
+					<option value="memleket_74">Bartın</option>
+					<option value="memleket_75">Ardahan</option>
+					<option value="memleket_77">Yalova</option>
+					<option value="memleket_78">Karabük</option>
+					<option value="memleket_79">Kilis</option>
+					<option value="memleket_80">Osmaniye</option>
+					<option value="memleket_81">Düzce</option>
  
- <input type="submit" value="Formu gönder" />
- 
-</form>
+					<br/><input type="submit" value="Formu gönder" />
+					<br/><button type="reset" value="Temizle">Temizle</button>
+				</form>
+	
+			</div>
+			<div>
+			
+			</div>
+		
+		</div>
+	</div>
 
-	<div id="altkisim" class=" p-5" ">
+
+    <!-- alt kısımdaki sayfa hakkında kısa bilgi-->
+	<div id="altkisim" class=" p-5" >
 				
 		Bu sayfa  ticari bir amaç taşımamaktadır.
 		Site yapımını öğrenmek ve kişisel beceri geliştirmek için yapılmıştır.
 				
-		
+			<p align="right">
+			İsim: Fırat Yağçı
+			<br/>
+			E-mail:b181210039@sakarya.edu.tr
+			<br/>
+			Mesleği:yok/öğrenci
+			<br/>
+			Adres:Sakarya Üniversitesi a Kampüsü Sakarya/türkiye
+			</p>
 	</div>
 
 
