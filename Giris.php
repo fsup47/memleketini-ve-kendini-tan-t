@@ -21,9 +21,3 @@
 
 
 ?>
-<!--hatalı login olmaya karşın siteye ulaşmak içindir-->
-<html>
-<Body>
-<a href="mardin_anasayfa.html">Siteye Git</a>
-</body>
-</html>
