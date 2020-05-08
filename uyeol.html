@@ -1,22 +1,19 @@
 
 <html>
+ 
 <head>
-<!--sayfa nın üsteki adı ve türkçe karekter için utf-8 kodu-->
-	<title>Mirasımız</title>
-	<meta charset="utf-8">
-  <!--js(javascript, bootstrap, kendi still dosyam bağlantıları--> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<script src="https://kit.fontawesome.com/yourcode.js"></script> <!-- ikonlar için-->
-	<link rel="stylesheet" href="css/stiller.css">
-
-<!--js(javascript, bootstrap, kendi still dosyam bağlantıları--> 
+<meta charset="utf-8">
+   <!--js(javascript, bootstrap, kendi still dosyam bağlantıları--> 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <script src="https://kit.fontawesome.com/yourcode.js"></script> <!-- ikonlar için-->
+ <link rel="stylesheet" href="css/stiller.css">
 </head>
-<body >
-	
-    <!--navbar oluşturdum ve içinde 5 link oluşturdum. 
+ 
+<body>
+ <!--navbar oluşturdum ve içinde 5 link oluşturdum. 
   En başta sayfa logosu oluşturdum. 
   Sayfayı küçültüğünde açılır bir pencere yaptım. 
   linkler gizlenip açılır pencereden seçebiliryoruz-->
@@ -56,38 +53,50 @@
 	
 			</div>
 		</div>
-	</nav>
-	<!-- yemekler ve gezilecek yerler için linkler-->
-	<div class="p-5" id="miras_arkaplan">
-		<div class="container" >
-			<div class="rows">
-			<h6>Mardin'in Tarihi Güzellikleri ve Yemekleri
-			
-						
-						<a href="http://www.artuklu.edu.tr/turizm-fakultesi/loziye"> Loziye ve Diğer Yemek Ürünleri<br/></a>
-						<a href="http://www.mardin.gov.tr/sehrimiz">----><img src="img/gezilecek.jpg"></a>
+  
 
-			</div>
-		</div>
-	</div>	
-   <!-- alt kısımdaki sayfa hakkında kısa bilgi-->
+	</nav>
+	<div class="p-5">
+			<div class="container" style="backgraound-color:red;">
+				<form action="Giris.php" method="POST"> 
+					<table border="1" cellpadding="4" cellspacing="2" align="center">
+						<tr>
+							<td colspan="2" align="center">Kullanıcı Girişi</td>
+						</tr>
+						<tr>
+							<td>Kullanıcı adı</td>
+							<td><input type="text" name="username" required></td>
+						</tr>	
+						<tr>
+							<td>Şifre</td>
+							<td><input type="password" name="password" required ></td>
+						</tr>
+						<tr>
+						<td><input type="submit" value="giris"  ></td>
+						</tr>
+					</table>
+				</form>
+			</div>	
+	
+	
+	</div>
+	
+		<!-- alt kısımdaki sayfa hakkında kısa bilgi-->
 	<div id="altkisim" class=" p-5" >
 				
 		Bu sayfa  ticari bir amaç taşımamaktadır.
 		Site yapımını öğrenmek ve kişisel beceri geliştirmek için yapılmıştır.
 				
 		<p align="right">
-			İsim: Fırat Yağçı
-			<br/>
-			E-mail:b181210039@sakarya.edu.tr
-			<br/>
-			Mesleği:yok/öğrenci
-			<br/>
-			Adres:Sakarya Üniversitesi a Kampüsü Sakarya/türkiye
-			</p>
+		İsim: Fırat Yağçı
+		<br/>
+		E-mail:b181210039@sakarya.edu.tr
+		<br/>
+		Mesleği:yok/öğrenci
+		<br/>
+		Adres:Sakarya Üniversitesi a Kampüsü Sakarya/türkiye
+		</p>
 	</div>
-
-
 
 </body>
 </html>
